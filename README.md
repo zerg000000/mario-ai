@@ -9,7 +9,7 @@ Quick Start
 
 If your machine have maven installed. Run the following command at the project and enjoy!
 
-mvn exec:java -Dexec.mainClass="ch.idsia.scenarios.Main" -Dexec.args="-ag ch.idsia.agents.controllers.ForwardJumpingAgent"
+  mvn exec:java -Dexec.mainClass="ch.idsia.scenarios.Main" -Dexec.args="-ag ch.idsia.agents.controllers.ForwardJumpingAgent"
 
 If you are using eclipse or intellij, don't give up. The tutorials are coming soon.
 
