@@ -6,12 +6,26 @@
 
     <groupId>ch.idsia</groupId>
     <artifactId>mario-ai</artifactId>
-    <version>1.0</version>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <scm>
+        <connection>scm:git:http://github.com/zerg000000/mario-ai.git</connection>
+        <developerConnection>scm:git:git@github.com:zerg000000/mario-ai.git</developerConnection>
+        <url>http://github.com/zerg000000/mario-ai</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>mario-ai-repo</id>
+            <name>mario-ai repository on GitHub</name>
+            <url>http://zerg000000.github.com/mario-ai/repository/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
@@ -37,5 +51,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>gh-pages</id>
+            <url>file:///${basedir}/../mario-ai-pages/repository/</url>
+        </repository>
+    </distributionManagement>
 
 </project>

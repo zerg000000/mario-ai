@@ -1,17 +1,28 @@
-This repository is a easy start point to start playing with Mario AI Championship 2011.
+This repository is a easy entry point to start playing with Mario AI Championship 2011.
 
 [Mario AI Championship 2011 Official Site](http://www.marioai.org/home)
 
 [Mario Competition Google Group](http://groups.google.com/group/mariocompetition) is the best place for asking questions.
 
-Quick Start
------------
 
-If your machine have maven installed. Run the following command at the project and enjoy!
+Getting Started
+---------------
 
-    mvn exec:java -Dexec.mainClass="ch.idsia.scenarios.Main" -Dexec.args="-ag ch.idsia.agents.controllers.ForwardJumpingAgent"
+you can just download binary, include the jars to your project and start coding.
+If you are using maven, ivy or other build tools, add following repository
 
-If you are using eclipse or intellij, don't give up. The tutorials are coming soon.
+<http://zerg000000.github.com/mario-ai/repository/>
+
+and declare the dependency, for maven
+```
+<dependency>
+   <groupId>ch.idsia</groupId>
+   <artifactId>mario-ai</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
+</dependency>
+```
+
+you are ready to go!
 
 Documentation
 -------------
@@ -19,7 +30,7 @@ Documentation
 The documentation is little and outdated, you would take many time to sort out the real answer.
 That's why this repository exist. But still, we need them to get started.
 you can find them from [Mario AI Championship 2011 Official Site](http://www.marioai.org/home).
-But here has a short list.
+But here's a short list.
 
 * [Game Play Track Getting Start](http://www.marioai.org/gameplay-track/getting-started)
 * [Learning Track Getting Start](http://www.marioai.org/LearningTrack/getting-started)
@@ -27,6 +38,45 @@ But here has a short list.
 
 Hope you will enjoy it and join the Championship in the near future!
 
+Build
+-----
 
+If your machine have Git and Maven installed.
 
+To checkout project
 
+    git clone git@github.com:zerg000000/mario-ai.git
+
+Run following command at the project root and enjoy!
+
+    mvn exec:java -Dexec.mainClass="ch.idsia.scenarios.Main" -Dexec.args="-ag ch.idsia.agents.controllers.ForwardJumpingAgent"
+
+Release
+-------
+
+For release build, you must checkout out two project under same directory[1].
+
+Checkout source code project
+
+    git clone git@github.com:zerg000000/mario-ai.git mario-ai
+
+Checkout repository project
+
+    git clone git@github.com:zerg000000/mario-ai.git mario-ai-pages
+
+Switch to gh-pages branch
+
+    git checkout gh-pages
+
+Do your release
+
+    mvn -DperformRelease=true clean deploy
+
+Update your mario-ai-pages project using [update-directory-index.sh](http://github.com/chkal/jsf-maven-util/blob/gh-pages/update-directory-index.sh)
+
+Commit and Push
+
+    git commit -am "your comment"
+    git push origin master
+
+[1]: http://chkal.blogspot.com/2010/09/maven-repositories-on-github.html
