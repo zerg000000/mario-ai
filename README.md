@@ -1,4 +1,4 @@
-This repository is a easy entry point to start playing with Mario AI Championship 2011.
+This repository is an easy entry point to start playing with Mario AI Championship 2011.
 
 [Mario AI Championship 2011 Official Site](http://www.marioai.org/home)
 
@@ -8,7 +8,9 @@ This repository is a easy entry point to start playing with Mario AI Championshi
 Getting Started
 ---------------
 
-you can just download binary, include the jars to your project and start coding.
+you can just download [distribution](https://github.com/downloads/zerg000000/mario-ai/mario-ai-0.0.1-SNAPSHOT-distribution.zip), include the jars in bin/ and lib/ to your project and start coding.
+you can find demos in different languages in example/ directory.
+
 If you are using maven, ivy or other build tools, add following repository
 
 <http://zerg000000.github.com/mario-ai/repository/>
@@ -37,6 +39,8 @@ But here's a short list.
 * [Level Generation Getting Start](http://www.marioai.org/LevelGeneration/getting-started)
 
 Hope you will enjoy it and join the Championship in the near future!
+
+ps. any help in coding, example or documentation is welcome.
 
 Build
 -----
