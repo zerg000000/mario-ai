@@ -3,7 +3,7 @@
   (:import ch.idsia.benchmark.mario.environments.Environment))
 
 (gen-class
-  :name example.agents.ForwardJumpingAgent
+  :name mario-ai-example-clj.agents.ForwardJumpingAgent
   :extends ch.idsia.agents.controllers.BasicMarioAIAgent
   :constructors {[] [java.lang.String]}
   :init "init"
